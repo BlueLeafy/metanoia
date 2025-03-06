@@ -1,0 +1,101 @@
+{
+  "lang": "it",
+  "navbar": {
+    "brand": "METANOIA",
+    "links": [
+      {"label": "home"},
+      {"label": "chi siamo"},
+      {"label": "manifesto"},
+      {"label": "newsletter"},
+      {"label": "i nostri canali"},
+      {"label": "blog"},
+      {"label": "contatti"}
+    ]
+  },
+  "hero": {
+    "youtube_title": "Player video YouTube",
+    "sections": [
+      {
+        "title": "Costruire",
+        "description": "Una comunità globale di cittadini impegnati ad avanzare progetti locali impattanti."
+      },
+      {
+        "title": "Ispirare",
+        "description": "La comunità per abbracciare uno stile di vita che potenzi le piccole imprese e supporti le iniziative indipendenti."
+      },
+      {
+        "title": "Sensibilizzare",
+        "description": "La consapevolezza riguardo la spesa etica, la vita sostenibile e le pratiche di pensiero libero."
+      },
+      {
+        "title": "Educare",
+        "description": "E informare i membri attraverso risorse accessibili e contenuti stimolanti."
+      },
+      {
+        "title": "Fornire",
+        "description": "Una piattaforma per scambiare idee, stimolare il dibattito e incoraggiare interazioni significative."
+      }
+    ],
+    "join_newsletter": "Unisciti alla nostra newsletter"
+  },
+  "about": {
+    "title": "METANOIA",
+    "content": [
+      "La parola METANOIA (μετάνοια) proviene dal greco e porta spesso la connotazione più profonda di un cambiamento trasformativo nel proprio modo di pensare, particolarmente in senso spirituale o morale.",
+      "Per noi, questo cambiamento deve diventare un'azione strutturale.",
+      "Mentre il mondo gira sempre più velocemente (cambiamento climatico, guerre, politica dell'odio, IA, megatrend, monopoli), abbiamo solo UNA opzione: AGIRE!"
+    ],
+    "cta": "Leggi il manifesto"
+  },
+  "manifesto": {
+    "title": "Manifesto 1.0",
+    "date": "07 Dicembre 2024",
+    "content": [
+      "La COMUNITÀ METANOIA è un gruppo di cittadini globali che sanno che la soluzione alle sfide del mondo attuale risiede nell'AZIONE.",
+      "Troppo tempo viene speso a teorizzare, fare doom scrolling, concentrarsi sulle differenze e così via, mentre ciò che deve accadere è sviluppare l'abitudine all'AZIONE, al CORAGGIO e alle piccole vittorie GIORNALIERE."
+    ],
+    "goals": [
+      "FERMARE il flusso di denaro e potere dal basso verso l'alto",
+      "Aiutare le persone e le comunità a creare un nuovo sistema",
+      "Rafforzare l'azione locale e le associazioni",
+      "Incoraggiare il focus locale e la vita locale",
+      "Supportare le piccole e medie imprese",
+      "Incoraggiare le persone a entrare in politica locale",
+      "Favorire la solidarietà intergenerazionale",
+      "Diffondere soluzioni basate sulla natura",
+      "Facilitare l'applicazione delle conoscenze globali alle sfide locali",
+      "Approfondire la comprensione reciproca tra le persone"
+    ],
+    "links": {
+      "join": "#homeNewsletter",
+      "download_manifesto": "/assets/documents/Manifesto V1.1.pdf",
+      "founders_guidelines": "/assets/documents/metanoia_founders_guidelines_v1-0.pdf"
+    }
+  },
+  "newsletter": {
+    "title": "Unisciti alla nostra newsletter",
+    "form": {
+      "name_placeholder": "Nome*",
+      "email_placeholder": "nome@example.com*",
+      "subscribe_button": "Iscriviti",
+      "required_indicator": "* indica obbligatorio"
+    }
+  },
+  "socials": {
+    "header": "I nostri canali"
+  },
+  "contact_form": {
+    "title": "Scrivici",
+    "form": {
+      "name_placeholder": "Nome",
+      "email_placeholder": "Email",
+      "subject_placeholder": "Oggetto",
+      "message_placeholder": "Messaggio",
+      "send_button": "Invia Messaggio"
+    }
+  },
+  "footer": {
+    "text": "© 2024 Metanoia. Tutti i diritti riservati.",
+    "policies_link": "Politiche di Metanoia"
+  }
+}

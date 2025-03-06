@@ -1,0 +1,45 @@
+{
+    "colorsTheme": [
+        {
+            "lightTheme": [
+                {
+                    "name": "forestGreen",
+                    "value": "rgb(34, 139, 34)"
+                },
+                {
+                    "name": "saddleBrown",
+                    "value": "rgb(139, 69, 19)"
+                }
+            ]
+        }
+    ],
+    "media": [
+        {
+            "video": [
+                {
+                    "id": "1",
+                    "src": "https://www.youtube.com/embed/oS7E_1vUjr4",
+                    "title": "Be part of Metanoia"
+                }
+            ],
+            "images": [
+                {
+                    "logotype": [
+                        {
+                            "alt": "Metanoia Logotype",
+                            "lightSrc": "src/assets/logotype/metanoiaLight.png",
+                            "darkSrc": "src/assets/logotype/metanoiaDark.png"
+                        }
+                    ],
+                    "icons": [
+                        {
+                            "name": "paletteIcon",
+                            "lightSrc": "src/assets/media/themePaletteIconLight.svg",
+                            "darkSrc": "src/assets/media/themePaletteIconDark.svg"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
