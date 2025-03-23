@@ -1,0 +1,20 @@
+home
+about
+resources
+join
+
+
+------
+newsletter
+
+
+------
+social media links
+youtube facebook etc
+
+video iframes in website
+
+------
+
+dark - light switch
+accessibility

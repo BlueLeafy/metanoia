@@ -27,15 +27,15 @@
                     "logotype": [
                         {
                             "alt": "Metanoia Logotype",
-                            "lightSrc": "src/assets/logotype/metanoiaLight.png",
-                            "darkSrc": "src/assets/logotype/metanoiaDark.png"
+                            "lightSrc": "/assets/logotype/metanoiaLight.png",
+                            "darkSrc": "public/assets/logotype/metanoiaDark.png"
                         }
                     ],
                     "icons": [
                         {
                             "name": "paletteIcon",
-                            "lightSrc": "src/assets/media/themePaletteIconLight.svg",
-                            "darkSrc": "src/assets/media/themePaletteIconDark.svg"
+                            "lightSrc": "/assets/media/themePaletteIconLight.svg",
+                            "darkSrc": "/assets/media/themePaletteIconDark.svg"
                         }
                     ]
                 }

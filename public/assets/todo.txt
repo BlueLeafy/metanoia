@@ -1,0 +1,4 @@
+1. Metanoia font and color for logotype
+2. Canva or figma for first weblook:
+   mobile first, desktop second
+3. Webcode
