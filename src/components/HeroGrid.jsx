@@ -43,7 +43,7 @@ function HeroGrid() {
 
 
     return (
-        <div className="grid grid-cols-5 gap-2.5 h-full">
+        <div className="grid grid-cols-5 auto-rows-auto gap-2.5">
             {/* YouTube Video */}
             <div className="col-span-3 row-span-full h-full flex flex-col justify-center bg-black">
                 <iframe
@@ -52,7 +52,7 @@ function HeroGrid() {
                     title={media[0].video[0].title}
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
+                    referrerPolicy="strict-origin-when-cross-origin"
                     allowfullscreen
                 ></iframe>
             </div>

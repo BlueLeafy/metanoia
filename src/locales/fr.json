@@ -68,8 +68,8 @@
     ],
     "links": {
       "join": "#homeNewsletter",
-      "download_manifesto": "/assets/documents/Manifesto V1.1.pdf",
-      "founders_guidelines": "/assets/documents/metanoia_founders_guidelines_v1-0.pdf"
+      "download_manifesto": "/assets/documents/fr/LE MESSAGE DE METANOIA.pdf",
+      "founders_guidelines": "/assets/documents/fr/Metanoia Founders Guidelines v 1.0 FR.pdf"
     }
   },
   "newsletter": {
@@ -143,6 +143,6 @@
   },
   "footer": {
     "text": "© 2024 Metanoia. Tous droits réservés.",
-    "policies_link": "Politiques de Metanoia"
+    "policies_link": "assets/documents/fr/Metanoia Policies v 1.0 FR.pdf"
   }
 }
