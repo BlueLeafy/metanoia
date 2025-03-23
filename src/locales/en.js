@@ -1,4 +1,4 @@
-{
+export const en = {
   "lang": "en",
   "navbar": {
     "brand": "METANOIA",

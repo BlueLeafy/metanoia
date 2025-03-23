@@ -1,4 +1,4 @@
-{
+export const ar ={
   "lang": "ar",
   "navbar": {
     "brand": "ميتانوا",
