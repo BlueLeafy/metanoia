@@ -1,15 +1,18 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-// import { useFetchColorsQuery } from "../store/apis/datasApi";
 
 function NavLink() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const [activeLink, setActiveLink] = useState("");
 
     const links = t("navbar.links", { returnObjects: true }) || []; 
 
+    const handleClick = (path) => {
+        setActiveLink(path);
+    };
+
     const renderedLinks = links.map((link) => {
-        //const { className, style } = activeLinkClasses(link.path);
+        const isActive = activeLink === link.path;
 
         return (
             <li key={link.path}
@@ -17,7 +20,8 @@ function NavLink() {
             >
                 <a
                     href={`#${link.path}`}
-                    className={`py-3.5 px-2.5 `}
+                    className={`py-3.5 px-2.5 ${isActive ? "text-[#228B22] underline underline-offset-4" : ""}`}
+                    onClick={() => handleClick(link.path)}
                 >
                     {link.label}
                 </a>

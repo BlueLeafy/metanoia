@@ -1,20 +1,24 @@
 import { createSlice } from "@reduxjs/toolkit";
 import i18n from "../../i18n";
 
+// Retrieve the saved language from localStorage or default to "en"
+const savedLanguage = localStorage.getItem("language") || "en";
+
 const initialState = {
-    lang: localStorage.getItem("language") || "en", // Use localStorage or default to "en"
+    lang: savedLanguage, // Use the saved language or default to "en"
 };
 
 const languageSlice = createSlice({
     name: "language",
-    initialState,  // Default en if not detected any other lang
-    reducer: {
+    initialState,
+    reducers: { // Fix: Use "reducers" (plural)
         setLanguage: (state, action) => {
-            state.lang = action.payload;
-            i18n.changeLanguage(action.payload); // Update i18n language
-            localStorage.setItem("language", action.payload) // SAve the language to localStorage
-        }
-    }
+            const newLanguage = action.payload;
+            state.lang = newLanguage; // Update the language in the Redux state
+            localStorage.setItem("language", newLanguage); // Save the language to localStorage
+            i18n.changeLanguage(newLanguage); // Update i18n language
+        },
+    },
 });
 
 export const { setLanguage } = languageSlice.actions;

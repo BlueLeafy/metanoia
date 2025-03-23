@@ -10,7 +10,11 @@ function Footer() {
             <div className="container mx-auto py-15">
                 <p className="text-center">{footerContent.text}</p>
                 {/* find link with right location */}
-                <p className="text-center"><a className="text-blue-600 font-medium underline underline-offset-1" href="">{footerContent.policies_link}</a></p>
+                <p className="text-center">
+                    <a className="text-blue-600 font-medium underline underline-offset-1" href={footerContent.policies_link}>
+                        Metanoia Policies
+                    </a>
+                    </p>
             </div>
         </footer>
     );
