@@ -3,13 +3,13 @@
   "navbar": {
     "brand": "METANOIA",
     "links": [
-      {"label": "inicio"},
-      {"label": "sobre nosotros"},
-      {"label": "manifiesto"},
-      {"label": "boletín"},
-      {"label": "canales"},
-      {"label": "blog"},
-      {"label": "contactos"}
+      {"label": "inicio","path": "/"},
+      {"label": "sobre nosotros","path": "sobre-nosotros"},
+      {"label": "manifiesto","path": "manifiesto"},
+      {"label": "boletín","path": "boletín"},
+      {"label": "canales","path": "canales"},
+      {"label": "blog","path": "blog"},
+      {"label": "contactos","path": "contactos"}
     ]
   },
   "hero": {

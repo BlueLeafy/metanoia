@@ -1,8 +1,9 @@
 import Newsletter from "../components/Newsletter";
 
-function NewsletterSection({ref}) {
+function NewsletterSection({id}) {
+
     return (
-        <section ref={ref} id="newsletter" className="min-h-[calc(100vh-64px)] h-[calc(100vh-64px)]">
+        <section id={id} className="min-h-[calc(100vh-64px)] h-[calc(100vh-64px)]">
             <Newsletter />
         </section>
     );

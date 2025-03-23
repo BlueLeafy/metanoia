@@ -1,8 +1,9 @@
 import Contact from "../components/Contact"
 
-function ContactSection({ref}) {
+function ContactSection({id}) {
+
     return (
-        <section ref={ref} id="contacts" className="min-h-[calc(100vh-64px)] h-[calc(100vh-64px)]">
+        <section id={id} className="min-h-[calc(100vh-64px)] h-[calc(100vh-64px)]">
             <Contact />
         </section>
     );

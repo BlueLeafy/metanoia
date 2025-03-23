@@ -2,7 +2,7 @@ import { useFetchMediaQuery } from "../store/apis/datasApi";
 import NavLink from "./NavLink";
 import LanguageSwitch from "./LanguageSwitch";
 
-function Navigation({ scrollToSection }) {
+function Navigation() {
     const { data: media, isLoading, isError } = useFetchMediaQuery();
 
     if (isLoading) return <p>Loading...</p>
@@ -14,13 +14,13 @@ function Navigation({ scrollToSection }) {
         <section className="container mx-auto">
             <div className="flex flex-row items-center gap-1.5 justify-between">
                 <div>
-                    <a href="/#home">
+                    <a href="/">
                         <img style={{ width: "11rem" }} src={logoType.lightSrc} alt="Logo" />
                     </a>
                 </div>
                 <div>
                     {/* NavLink component */}
-                    <NavLink scrollToSection={scrollToSection} />
+                    <NavLink  />
                 </div>
                 <div>
                     {/* TO DO */}

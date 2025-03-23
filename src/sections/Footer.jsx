@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 
+
 function Footer() {
     const { t } = useTranslation();
     const footerContent = t("footer", { returnObjects: true }) || [];

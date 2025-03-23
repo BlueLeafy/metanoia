@@ -1,8 +1,9 @@
 import Channels from "../components/Channels";
 
-function ChannelsSection({ ref }) {
+function ChannelsSection({ id }) {
+
     return (
-        <section ref={ref} id="channels">
+        <section id={id}>
             <Channels />
         </section>
     );

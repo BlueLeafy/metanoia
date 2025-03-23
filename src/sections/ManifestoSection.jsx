@@ -1,8 +1,9 @@
 import Manifesto from "../components/Manifesto";
 
-function ManifestoSection({ref}) {
+function ManifestoSection({id}) {
+
     return (
-        <section ref={ref} id="manifesto" className="h-full">
+        <section id={id} className="h-full">
             <Manifesto />
         </section>
     );

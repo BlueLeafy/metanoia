@@ -9,6 +9,8 @@ function LanguageSwitch() {
     
     // Get current language from Redux store
     const currentLang = useSelector((state) => state.language.lang);
+    console.log(currentLang);
+    
     
     const [isOpen, setIsOpen] = useState(false);
 
@@ -20,6 +22,7 @@ function LanguageSwitch() {
     // Select language and dispatch to Redux and i18next
     const handleLangSelect = (lang) => {
         try {
+            console.log();
             
             i18n.changeLanguage(lang);  // Change language in i18next
             dispatch(setLanguage(lang)); // Update language in Redux// it is undefined but works ???

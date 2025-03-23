@@ -1,47 +1,23 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useFetchColorsQuery } from "../store/apis/datasApi";
+// import { useFetchColorsQuery } from "../store/apis/datasApi";
 
-function NavLink({ scrollToSection }) {
-    const { t } = useTranslation();
+function NavLink() {
+    const { t, i18n } = useTranslation();
     const [activeLink, setActiveLink] = useState("");
 
-    const { data: colorTheme } = useFetchColorsQuery();
-
-    const links = t("navbar.links", { returnObjects: true }) || []; // Content from translation file
-
-    const colorActive = colorTheme[0].lightTheme[0].value || "#000";
-
-    const handleClick = (linkLabel, event) => {
-        event.preventDefault();
-        setActiveLink(linkLabel);
-        scrollToSection(linkLabel);
-    };
-
-    const activeLinkClasses = (linkLabel) => {
-        return activeLink === linkLabel ?
-            {
-                style: { color: colorActive },
-                className: "underline underline-offset-8",
-            } :
-            {
-                style: {},
-                className: "underline-offset-0"
-            };
-    };
+    const links = t("navbar.links", { returnObjects: true }) || []; 
 
     const renderedLinks = links.map((link) => {
-        const { className, style } = activeLinkClasses(link.label);
+        //const { className, style } = activeLinkClasses(link.path);
 
         return (
-            <li key={link.label}
+            <li key={link.path}
                 style={link.label === "blog" ? { display: "none" } : {}}
             >
                 <a
-                    href={`/#${link.label}`}
-                    onClick={() => handleClick(link.label, event)}
-                    className={`py-3.5 px-2.5 ${className}`}
-                    style={style}
+                    href={`#${link.path}`}
+                    className={`py-3.5 px-2.5 `}
                 >
                     {link.label}
                 </a>
