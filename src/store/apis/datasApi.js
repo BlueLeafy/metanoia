@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 const datasApi = createApi({
     reducerPath: "data",
     baseQuery: fetchBaseQuery({
-        baseUrl: "http://localhost:3005/"
+        baseUrl: "https://metanoia.community/",
     }),
     tagTypes: ["Data"],
     endpoints(builder) {
@@ -13,7 +13,7 @@ const datasApi = createApi({
                 providesTags: ["Data"],
                 query: () => {
                     return {
-                        url: "/media",
+                        url: "media",
                         method: "GET"
                     };
                 },
@@ -23,7 +23,7 @@ const datasApi = createApi({
                 providesTags: ["Data"],
                 query: () => {
                     return {
-                        url: "/colorsTheme",                        
+                        url: "colorsTheme",                        
                         method: "GET"
                     };
                 },

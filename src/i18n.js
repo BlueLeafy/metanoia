@@ -1,12 +1,12 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import en from "./locales/en.json";
-import it from "./locales/it.json";
-import es from "./locales/es.json";
-import cs from "./locales/cs.json";
-import fr from "./locales/fr.json";
-import ar from "./locales/ar.json";
+import en from "https://metanoia.community/assets/locales/en.json";
+import it from "https://metanoia.community/assets/locales/it.json";
+import es from "https://metanoia.community/assets/locales/es.json";
+import cs from "https://metanoia.community/assets/locales/cs.json";
+import fr from "https://metanoia.community/assets/locales/fr.json";
+import ar from "https://metanoia.community/assets/locales/ar.json";
 
 i18n
     .use(initReactI18next) // Initialize for React

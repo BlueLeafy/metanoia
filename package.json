@@ -8,12 +8,13 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start-server": "json-server --watch db.json --port 3005"
+    "start-server": "node server.js"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.0",
     "@tailwindcss/vite": "^4.0.9",
     "classnames": "^2.5.1",
+    "cors": "^2.8.5",
     "i18next": "^24.2.2",
     "i18next-browser-languagedetector": "^8.0.4",
     "i18next-http-backend": "^3.0.2",
