@@ -4,11 +4,12 @@ import { setLanguage } from "../store/slices/languageSlice";  // Redux action to
 import i18n from "../i18n";  // Import i18n instance to change the language
 
 function LanguageSwitch() {
-    const langs = ["en", "it"];
+    const langs = ["en", "it", "es", "ar", "fr", "cs"];
     const dispatch = useDispatch();
     
     // Get current language from Redux store
     const currentLang = useSelector((state) => state.language.lang);
+    
     const [isOpen, setIsOpen] = useState(false);
 
     // Toggle Dropdown visibility

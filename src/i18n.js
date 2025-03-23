@@ -3,6 +3,14 @@ import { initReactI18next } from "react-i18next";
 
 import en from "./locales/en.json";
 import it from "./locales/it.json";
+import es from "./locales/es.json";
+import cs from "./locales/cs.json";
+import fr from "./locales/fr.json";
+import ar from "./locales/ar.json";
+
+
+
+
 
 i18n
     .use(initReactI18next) // Initialize for React
@@ -10,10 +18,14 @@ i18n
         resources: {
             en: { translation: en },
             it: { translation: it },
+            es: {translation: es},
+            fr: {translation: fr},
+            ar: {translation: ar},
+            cs: {translation: cs}
         },
         lng: "en", // Default language if nothing is detected
         fallbackLng: "en", // Fallback language if the selected one is not available
-        supportedLngs: ["en", "it"], // Supported languages
+        supportedLngs: ["en", "it", "es", "fr", "cs", "ar"], // Supported languages
         debug: process.env.NODE_ENV === 'development', // Enable debug only in development mode
         interpolation: {
             escapeValue: false, // React already escapes HTML
